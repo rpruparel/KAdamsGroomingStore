@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/KAdamsGroomingStore">
+
+	<!--	<openshift server ip address> : replace with openshift server ip address
+			<openshift mysql username>    : replace with openshift mysql username
+			<openshift mysql password>    : replace with openshift mysql password
+			<database name> 			  : replace with name of database used			-->
+    
+	<Resource name="jdbc/kadamsgroomingstore" auth="Container"
+    driverClassName="com.mysql.jdbc.Driver"
+    url="jdbc:mysql://<openshift server ip address>:<port number>/<database name>?autoReconnect=true"
+    username="<openshift mysql username>" password="<openshift mysql password>"
+    maxActive="100" maxIdle="30" maxWait="10000"
+    logAbandoned="true" removeAbandoned="true"
+    removeAbandonedTimeout="60" type="javax.sql.DataSource" />
+	
+  <Realm className="org.apache.catalina.realm.DataSourceRealm" 
+         dataSourceName="jdbc/kadamsgroomingstore" debug="99" 
+         localDataSource="true" roleNameCol="roleName" userCredCol="password" 
+         userNameCol="emailAddress" userRoleTable="userrole" userTable="user" />
+</Context>

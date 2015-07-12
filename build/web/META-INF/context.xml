@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/KAdamsGroomingStore">
+    
+    <Resource name="jdbc/kadamsgroomingstore" auth="Container"
+    driverClassName="com.mysql.jdbc.Driver"
+    url="jdbc:mysql://127.5.11.2:3306/tomcat?autoReconnect=true"
+    username="admin7ZkvFuU" password="91cFYVsYizrw"
+    maxActive="100" maxIdle="30" maxWait="10000"
+    logAbandoned="true" removeAbandoned="true"
+    removeAbandonedTimeout="60" type="javax.sql.DataSource" />
+    
+  <!--<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" 
+            logAbandoned="true" maxActive="100" maxIdle="30" maxWait="10000" 
+            name="jdbc/kadamsgroomingstore" password="sesame" removeAbandoned="true" 
+            removeAbandonedTimeout="60" type="javax.sql.DataSource" 
+            url="jdbc:mysql://localhost:3306/kadamsgroomingstore?autoReconnect=true" 
+            username="root" />-->
+  <Realm className="org.apache.catalina.realm.DataSourceRealm" 
+         dataSourceName="jdbc/kadamsgroomingstore" debug="99" 
+         localDataSource="true" roleNameCol="roleName" userCredCol="password" 
+         userNameCol="emailAddress" userRoleTable="userrole" userTable="user" />
+</Context>

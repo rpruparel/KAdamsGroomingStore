@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">    
+    <servlet>
+        <servlet-name>CatalogController</servlet-name>
+        <servlet-class>Grooming.controller.CatalogController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrderController</servlet-name>
+        <servlet-class>Grooming.controller.OrderController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminController</servlet-name>
+        <servlet-class>Grooming.controller.AdminController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CatalogController</servlet-name>
+        <url-pattern>/CatalogController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OrderController</servlet-name>
+        <url-pattern>/OrderController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminController</servlet-name>
+        <url-pattern>/AdminController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>
+           index.jsp
+        </welcome-file>
+    </welcome-file-list>
+    
+     <security-role>
+        <description>Administrator</description>
+        <role-name>admin</role-name>
+    </security-role>
+    
+    <security-constraint>
+        <!-- Restrict access to the URLs in the admin directory -->
+        <web-resource-collection>
+            <web-resource-name>admin</web-resource-name>
+            <url-pattern>/admin.jsp</url-pattern>
+        </web-resource-collection>
+
+        <!-- Authorize the service and programmer roles -->
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+               
+    </security-constraint>
+    
+    <login-config>
+        <auth-method>
+            FORM
+        </auth-method>
+        <form-login-config>
+            <form-login-page>
+                /adminlogin.jsp
+            </form-login-page>
+            <form-error-page>
+                /adminlogin.jsp?message=error
+            </form-error-page>
+        </form-login-config>
+    </login-config>
+   
+</web-app>

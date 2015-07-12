@@ -1,0 +1,140 @@
+html, body {
+    margin: 0;
+    height: 100 % ;
+}
+.Headers {
+    font - family: Poiret One;
+    font - weight: bold;
+    font - size: 100 % ;
+    text - shadow: 5 px 5 px 10 px gray;
+    text - indent: 50 px;
+    color: whitesmoke;
+    height: 100 px;
+    width: 90 % ;
+    background - color: black;
+    text - align: left;
+    position: relative;
+    margin - right: 30 px;
+    margin - left: 60 px;
+    vertical - align: super;
+}
+.Background {
+    background - image: url('../images/Background.jpg');
+}
+.UserSpecific {
+    background - image: url('../images/Menubar.jpg');
+    list - style - type: none;
+    float: left;
+    font - family: Poiret One;
+    font - weight: bold;
+    font - size: 90 % ;
+    text - shadow: 5 px 5 px 10 px gray;
+    text - align: center;
+    color: gray;
+    margin - bottom: 2 px;
+    margin - top: 2 px;
+    margin - right: 30 px;
+    margin - left: 60 px;
+    width: 90 % ;
+    height: 50 px;
+}
+
+.Header {
+    float: top;
+}
+
+.bodytext {
+    margin - left: 60 px;
+}
+.bodytextleft {
+    margin - left: 80 % ;
+}
+
+.Signin {
+    float: right;
+    margin - top: 15 px;
+    margin - right: 20 px;
+}
+
+ul {
+    width: 100 % ;
+}
+
+li {
+    display: inline - block;
+    width: 220 px;
+    text - align: justify;
+    color: gray;
+}
+
+.stylea {
+    font - size: 25 px;
+    color: white;
+}
+
+.a {
+    color: white;
+    text - decoration: none;
+}
+
+a: hover, a: link, a: active, a: visited {
+    text - decoration: none;
+    color: white;
+}
+
+.Left {
+    font - family: Poiret One;
+    font - size: 150 % ;
+    text - align: center;
+    height: 700 px;
+    width: 20 % ;
+    color: black;
+    background - color: silver;
+    float: left;
+    background - image: url('../images/Menu.jpg');
+    margin - left: 60 px;
+}
+.Left img {
+    width: 200 % ;
+    height: auto;
+}
+.Right {
+    font - family: Poiret One;
+    height: 700 PX;
+    width: 70 % ;
+    color: gray;
+    float: left;
+    background - image: url('../images/HomeC.jpg');
+    margin - right: 30 px;
+}
+
+.Main {
+    font - family: Georgia;
+    height: 700 PX;
+    width: 70 % ;
+    color: black;
+    float: left;
+    background - image: url('../images/OtherC.jpg');
+    margin - right: 30 px;
+}
+
+th, td {
+    padding - left: 15 px;
+}
+.Table {
+    width: 100 % ;
+}
+.stickyFooter {
+    background - image: url('../images/Background.jpg');
+    font - family: Georgia;
+    color: #ffffff;
+    text - decoration - color: #ffffff;
+    font - size: 100 % ;
+    height: 20 px;
+    width: 90 % ;
+    text - align: center;
+    margin - right: 30 px;
+    margin - left: 60 px;
+    position: fixed;
+    bottom: 0;
+}

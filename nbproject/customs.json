@@ -1,0 +1,8 @@
+{
+    "attributes": {
+        "maxlength": {
+            "context": "input"
+        }
+    },
+    "elements": {}
+}
