@@ -1,0 +1,2 @@
+# KAdamsGroomingStore
+K Adam's Grooming Store is an E-commerce web application that is developed for online shopping of apparels and accessories for gentlemen. The user has to create a account first and update his personal details. It has a shopping cart facility to keep items in cart during the entire session and then the user can confirm the order after successful payment through credit card. The user can also keep a track of all his recent purchases and similarly even admin can keep a track of all purchases.
