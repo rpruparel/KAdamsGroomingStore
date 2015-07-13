@@ -2,6 +2,7 @@
 <Context path="/KAdamsGroomingStore">
 
 	<!--	<openshift server ip address> : replace with openshift server ip address
+			<port number>				  : replace with openshift port number
 			<openshift mysql username>    : replace with openshift mysql username
 			<openshift mysql password>    : replace with openshift mysql password
 			<database name> 			  : replace with name of database used			-->
